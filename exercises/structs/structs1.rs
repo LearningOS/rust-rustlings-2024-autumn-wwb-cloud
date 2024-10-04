@@ -4,7 +4,6 @@
 //
 // Execute `rustlings hint structs1` or use the `hint` watch subcommand for a
 // hint
-
 struct ColorClassicStruct {
     pub red:i32,
     pub green:i32,
