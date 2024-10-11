@@ -36,7 +36,7 @@ mod tests {
     fn your_order() {
         let order_template = create_order_template();
         let your_order =Order{
-            count:1,
+             count:1,
             ..order_template
         }
         assert_eq!(your_order.name, "Hacker in Rust");
