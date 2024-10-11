@@ -30,12 +30,14 @@ fn create_order_template() -> Order {
 
 #[cfg(test)]
 mod tests {
+    use std::any::type_name;
     use super::*;
 
     #[test]
     fn your_order() {
         let order_template = create_order_template();
         let your_order =Order{
+            name:String::from("Bob"),
              count:1,
             ..order_template,
         };
