@@ -31,6 +31,7 @@ fn create_order_template() -> Order {
 #[cfg(test)]
 mod tests {
     use std::any::type_name;
+    
     use super::*;
 
     #[test]
@@ -39,7 +40,7 @@ mod tests {
         let your_order =Order{
             name:String::from("Hacker in Rust"),
              count:1,
-            ..order_template,
+            ..order_template
         };
         assert_eq!(your_order.name, "Hacker in Rust");
         assert_eq!(your_order.year, order_template.year);
