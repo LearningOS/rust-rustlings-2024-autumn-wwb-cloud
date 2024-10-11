@@ -36,9 +36,9 @@ mod tests {
     fn your_order() {
         let order_template = create_order_template();
         let your_order =Order{
-             count:1;
-            ..order_template;
-        }
+             count:1,
+            ..order_template,
+        };
         assert_eq!(your_order.name, "Bob");
         assert_eq!(your_order.year, order_template.year);
         assert_eq!(your_order.made_by_phone, order_template.made_by_phone);
